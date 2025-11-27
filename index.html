@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List - Exercice 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ma To-Do List</h1>
+            <p>Gérez vos tâches quotidiennes efficacement</p>
+        </header>
+
+        <main>
+            <section class="add-task">
+                <form id="taskForm">
+                    <div class="input-group">
+                        <input type="text" id="taskInput" placeholder="Entrez une nouvelle tâche..." required>
+                        <button type="submit" id="addBtn">Ajouter</button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="task-stats">
+                <div class="stats">
+                    <span id="totalTasks">Total: 0 tâches</span>
+                    <span id="completedTasks">Complétées: 0</span>
+                    <span id="pendingTasks">En attente: 0</span>
+                </div>
+            </section>
+
+            <section class="task-list">
+                <ul id="taskList">
+                    <!-- Les tâches seront ajoutées ici dynamiquement -->
+                </ul>
+            </section>
+
+            <section class="actions">
+                <button id="clearCompleted" class="btn-secondary">Supprimer les tâches complétées</button>
+                <button id="clearAll" class="btn-danger">Tout supprimer</button>
+            </section>
+        </main>
+
+        <footer>
+            <p>Exercice 2: To-Do List - Manipulation du DOM</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
